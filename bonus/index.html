@@ -10,8 +10,8 @@
 <body>
     <div id="app">
 
-        <ul>
-            <li v-for="(emails, i) in emailList" v-show="emailList.length > 9">
+        <ul v-if="emailList.length > 9">
+            <li v-for="(emails, i) in emailList">
                 {{emails}}
             </li>
         </ul>
